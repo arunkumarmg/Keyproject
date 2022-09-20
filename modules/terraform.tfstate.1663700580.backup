@@ -1,0 +1,118 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.9",
+  "serial": 9,
+  "lineage": "2d2097ea-4c97-4a9d-d60a-fd6b5c5420b5",
+  "outputs": {},
+  "resources": [
+    {
+      "module": "module.database",
+      "mode": "managed",
+      "type": "google_sql_database_instance",
+      "name": "sql-database",
+      "provider": "module.database.provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "clone": [],
+            "connection_name": "keyproject-362417:us-central1:postgressql-dev",
+            "database_version": "POSTGRES_9_6",
+            "deletion_protection": true,
+            "encryption_key_name": null,
+            "first_ip_address": "35.232.138.138",
+            "id": "postgressql-dev",
+            "ip_address": [
+              {
+                "ip_address": "35.232.138.138",
+                "time_to_retire": "",
+                "type": "PRIMARY"
+              },
+              {
+                "ip_address": "34.132.103.125",
+                "time_to_retire": "",
+                "type": "OUTGOING"
+              }
+            ],
+            "master_instance_name": "",
+            "name": "postgressql-dev",
+            "private_ip_address": "",
+            "project": "keyproject-362417",
+            "public_ip_address": "35.232.138.138",
+            "region": "us-central1",
+            "replica_configuration": [],
+            "restore_backup_context": [],
+            "root_password": null,
+            "self_link": "https://sqladmin.googleapis.com/sql/v1beta4/projects/keyproject-362417/instances/postgressql-dev",
+            "server_ca_cert": [
+              {
+                "cert": "-----BEGIN CERTIFICATE-----\nMIIDfzCCAmegAwIBAgIBADANBgkqhkiG9w0BAQsFADB3MS0wKwYDVQQuEyRjNmRm\nNzAwZC0zNDdlLTQ3NDQtYWViNy00NjhiNjdiZGM4NjUxIzAhBgNVBAMTGkdvb2ds\nZSBDbG91ZCBTUUwgU2VydmVyIENBMRQwEgYDVQQKEwtHb29nbGUsIEluYzELMAkG\nA1UEBhMCVVMwHhcNMjIwOTIwMTg0NTQ5WhcNMzIwOTE3MTg0NjQ5WjB3MS0wKwYD\nVQQuEyRjNmRmNzAwZC0zNDdlLTQ3NDQtYWViNy00NjhiNjdiZGM4NjUxIzAhBgNV\nBAMTGkdvb2dsZSBDbG91ZCBTUUwgU2VydmVyIENBMRQwEgYDVQQKEwtHb29nbGUs\nIEluYzELMAkGA1UEBhMCVVMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB\nAQCqgWygAKhkY1RjjW6K8f0Gr2Ap7axLTeFWqL1dvK9WOSd7P6b/NKs1lKh+XO3z\nncFaWPUBasAY+9lWDYHpbCljOFHTMrJajTFwgg3z/X8tMC99l/dbCGUc59+J6Vg/\nMadUmUGe7DpRhfgqLlHQ5hWfvYDeqxTQ0NPrR1tlsMBX6qleLgbZ//Pc2f3yl8NW\nvwo9H5v5xD+ZnVlxaxS/BPCQh9eFNJ2UjEHMUFAaiV+aQirOB9uTjZM3cGgeXjO+\nh+NZ8XBQEr2YWTV0ZspOkeWXA3ImX8ABNBO64W2Zqdg8n1fXXIdkqK4JXoyM016j\n6zhuda5pZMP+rb54XhBWJToxAgMBAAGjFjAUMBIGA1UdEwEB/wQIMAYBAf8CAQAw\nDQYJKoZIhvcNAQELBQADggEBAGQ7oc7JgEQ6SKRzQo5LqihJBdXf7ogfSmr52Fex\nQ1W5yb8TLcsy76AB9+grbEnNcvjMRMsKycYZNkCLT7P4L9C+xP2M4uJ+7CVw4v62\nNmIBLlMz+tMh5Ln3U5NZbiWzJL854KA90ezat8XXXKUbW5UQQHY37lzQHfAaKexz\nVpGhCtQFjID3Dv/XnQsSyC9lExNrj8rD/OILnHwF5Yz/Lo+WNMC+dOgTZ59KuWZG\nLYhQrOxfBKX/uCXw3R4e4qxNPBMudiaxgmiqUFgxf/c7iDWf8IVRkasojhc7K/C3\nTG13nS65RBhfTgoXRA6BiR+OrLcUCLETPphbAYfVGGrqy/Y=\n-----END CERTIFICATE-----",
+                "common_name": "C=US,O=Google\\, Inc,CN=Google Cloud SQL Server CA,dnQualifier=c6df700d-347e-4744-aeb7-468b67bdc865",
+                "create_time": "2022-09-20T18:45:49.574Z",
+                "expiration_time": "2032-09-17T18:46:49.574Z",
+                "sha1_fingerprint": "d6e68a966057a4c9637916fbc8c87b70f922970e"
+              }
+            ],
+            "service_account_email_address": "p895215536442-853vrb@gcp-sa-cloud-sql.iam.gserviceaccount.com",
+            "settings": [
+              {
+                "activation_policy": "ALWAYS",
+                "active_directory_config": [],
+                "availability_type": "ZONAL",
+                "backup_configuration": [
+                  {
+                    "backup_retention_settings": [
+                      {
+                        "retained_backups": 7,
+                        "retention_unit": "COUNT"
+                      }
+                    ],
+                    "binary_log_enabled": false,
+                    "enabled": false,
+                    "location": "",
+                    "point_in_time_recovery_enabled": false,
+                    "start_time": "18:00",
+                    "transaction_log_retention_days": 7
+                  }
+                ],
+                "collation": "",
+                "database_flags": [],
+                "disk_autoresize": true,
+                "disk_autoresize_limit": 0,
+                "disk_size": 20,
+                "disk_type": "PD_SSD",
+                "insights_config": [],
+                "ip_configuration": [
+                  {
+                    "allocated_ip_range": "",
+                    "authorized_networks": [],
+                    "ipv4_enabled": true,
+                    "private_network": "",
+                    "require_ssl": false
+                  }
+                ],
+                "location_preference": [
+                  {
+                    "follow_gae_application": "",
+                    "secondary_zone": "",
+                    "zone": "us-central1-b"
+                  }
+                ],
+                "maintenance_window": [],
+                "password_validation_policy": [],
+                "pricing_plan": "PER_USE",
+                "sql_server_audit_config": [],
+                "tier": "db-g1-small",
+                "user_labels": {},
+                "version": 1
+              }
+            ],
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInVwZGF0ZSI6MTgwMDAwMDAwMDAwMH19"
+        }
+      ]
+    }
+  ]
+}

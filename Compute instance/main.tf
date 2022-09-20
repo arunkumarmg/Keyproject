@@ -6,7 +6,7 @@ resource "google_compute_instance" "default" {
     can_ip_forward = "false"
     description = "Debian virtual machine"
 
-    tags = ["allow-http", "allow-https"]  #FIREWALL
+    tags = ["allow-http", "allow-https"] #FIREWALL
 
     
 boot_disk {
@@ -21,11 +21,11 @@ network_interface {
 service_account {
     scopes = ["userinfo-email", "compute-ro", "storage-ro"]
  }
- /* depends_on = [
+ depends_on = [
    google_compute_instance.Second
- ] */
+ ]
 }
-resource "google_compute_instance" "Second" {
+ resource "google_compute_instance" "Second" {
     count = "${length(var.name_count)}"
     name = "instance-${count.index+1}"
     machine_type = "${var.machine_type ["qa"]}"
@@ -43,4 +43,4 @@ network_interface {
 service_account {
     scopes = ["userinfo-email", "compute-ro", "storage-ro"]
  }
-}
+} 

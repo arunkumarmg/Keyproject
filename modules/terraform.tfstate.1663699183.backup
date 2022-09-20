@@ -1,0 +1,53 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.9",
+  "serial": 3,
+  "lineage": "2d2097ea-4c97-4a9d-d60a-fd6b5c5420b5",
+  "outputs": {},
+  "resources": [
+    {
+      "module": "module.buckets",
+      "mode": "managed",
+      "type": "google_storage_bucket",
+      "name": "bucket",
+      "provider": "module.buckets.provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 0,
+          "attributes": {
+            "cors": [],
+            "default_event_based_hold": false,
+            "encryption": [],
+            "force_destroy": false,
+            "id": "my-bk-dev",
+            "labels": {
+              "location": "europe-west2",
+              "name": "my-bk-dev"
+            },
+            "lifecycle_rule": [],
+            "location": "EUROPE-WEST2",
+            "logging": [],
+            "name": "my-bk-dev",
+            "project": "keyproject-362417",
+            "requester_pays": false,
+            "retention_policy": [],
+            "self_link": "https://www.googleapis.com/storage/v1/b/my-bk-dev",
+            "storage_class": "REGIONAL",
+            "timeouts": null,
+            "uniform_bucket_level_access": false,
+            "url": "gs://my-bk-dev",
+            "versioning": [
+              {
+                "enabled": true
+              }
+            ],
+            "website": []
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoyNDAwMDAwMDAwMDAsInJlYWQiOjI0MDAwMDAwMDAwMCwidXBkYXRlIjoyNDAwMDAwMDAwMDB9fQ=="
+        }
+      ]
+    }
+  ]
+}
